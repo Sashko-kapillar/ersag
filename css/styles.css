@@ -564,8 +564,16 @@ img {
 
 .overlay-text {
   /* color: #fbfbfb; */
-  letter-spacing: 0.08em;
-  line-height: 1.4;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay-text {
+    /* color: #fbfbfb; */
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+  }
 }
 
 .overlay-span {
@@ -577,9 +585,10 @@ img {
   transform: translateY(0);
 }
 
-.catalog-img {
+/* .catalog-img {
   padding: 18px 36px;
-}
+} */
+
 .hide-on-mobile {
   display: none;
 }
