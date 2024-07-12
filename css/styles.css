@@ -564,6 +564,9 @@ img {
 
 .overlay-text {
   /* color: #fbfbfb; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   letter-spacing: 0.04em;
   line-height: 1.2;
 }
@@ -578,6 +581,19 @@ img {
 
 .overlay-span {
   font-weight: 700;
+}
+
+.overlay-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+  background-color: #cadab4;
+  border-radius: 10px;
+  border: 1px solid #fbfbfb;
+  padding: 8px 12px;
+  margin-left: auto;
 }
 
 .catalog-picture:hover .catalog-overlay,
