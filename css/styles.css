@@ -1175,13 +1175,13 @@ img {
   margin-bottom: 20px;
 }
 
-.modal-text {
-  font-weight: 500;
-  font-size: 14px;
+.modal-text,
+.modal-text-one {
+  font-weight: 400;
+  font-size: 18px;
   line-height: 129%;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.04em;
   color: rgba(12, 12, 12, 0.7);
-  margin-bottom: 22px;
 }
 
 .img-contact-us {
@@ -1295,7 +1295,6 @@ img {
   }
 
   .modal-text {
-    font-size: 16px;
     line-height: 125%;
     margin-bottom: 32px;
   }
