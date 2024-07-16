@@ -644,6 +644,7 @@ img {
   text-align: center;
   padding: 2px 8px;
   color: rgba(12, 12, 12, 0.5);
+  user-select: none;
 }
 
 .btn-show-more:hover,
