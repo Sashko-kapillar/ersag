@@ -702,6 +702,10 @@ img {
     line-height: 100%;
     width: 304px;
   }
+
+  .btn-more {
+    display: none;
+  }
 }
 
 /* =======  Advertisement  ======== */
