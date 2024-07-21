@@ -608,7 +608,7 @@ img {
   border: 1px solid #fbfbfb;
   padding: 8px 12px;
   margin-left: auto;
-  margin-top: auto;
+  margin-top: 8px;
 }
 
 .catalog-picture:hover .catalog-overlay,
