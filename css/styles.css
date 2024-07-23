@@ -626,13 +626,15 @@ img {
   text-align: center;
   padding: 2px 8px;
   color: rgba(12, 12, 12, 0.5);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
   user-select: none;
 }
 
 .btn-container {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   position: absolute;
   right: 24px;
   bottom: 12px;
