@@ -601,7 +601,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 160px;
+  min-width: 160px;
   height: 40px;
   background-color: #cadab4;
   border-radius: 10px;
@@ -611,25 +611,32 @@ img {
   margin-top: 8px;
 }
 
-.catalog-picture:hover .catalog-overlay,
+/* .catalog-picture:hover .catalog-overlay,
 .catalog-picture:focus .catalog-overlay {
   transform: translateY(0);
-}
+} */
 
 .btn-more {
-  position: absolute;
   font-weight: 400;
   font-size: 16px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  right: 24px;
-  bottom: 12px;
   border: 1px solid #787878;
   border-radius: 8px;
   text-align: center;
   padding: 2px 8px;
   color: rgba(12, 12, 12, 0.5);
   user-select: none;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: absolute;
+  right: 24px;
+  bottom: 12px;
+  /* border: 1px solid gray; */
 }
 
 .btn-show-more:hover,
@@ -685,7 +692,7 @@ img {
   }
 
   .btn-more {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -1178,9 +1185,13 @@ img {
 .modal-text-one {
   font-weight: 400;
   font-size: 16px;
-  line-height: 129%;
+  line-height: 120%;
   letter-spacing: 0.04em;
   color: rgba(12, 12, 12, 0.7);
+}
+
+.modal-text {
+  margin-bottom: 20px;
 }
 
 .img-contact-us {
@@ -1199,7 +1210,29 @@ img {
 
 .modal-field-wrap {
   width: 100%;
-  gap: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+  margin-bottom: 8px;
+}
+
+.modal-label span {
+  color: red;
+}
+
+.checkbox-container > p span {
+  color: red;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  resize: none;
 }
 
 .modal-input {
@@ -1259,6 +1292,7 @@ img {
   line-height: 129%;
   text-align: center;
   color: #fbfbfb;
+  cursor: pointer;
   border: none;
   border-radius: 16px;
   background-color: #3350e9;
@@ -1266,6 +1300,7 @@ img {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 8px;
 }
 
 .btn-subscribe:focus,
