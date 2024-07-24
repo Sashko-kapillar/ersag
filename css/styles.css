@@ -14,6 +14,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fbfbfb;
   color: #0c0c0c;
+  height: 200vh;
+  scroll-behavior: smooth; /* Властивість забезпечує плавний скролл при переході до якорів. */
 }
 
 h1,
@@ -609,6 +611,7 @@ img {
   padding: 8px 12px;
   margin-left: auto;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 /* .catalog-picture:hover .catalog-overlay,
@@ -616,7 +619,7 @@ img {
   transform: translateY(0);
 } */
 
-.btn-more {
+.btn-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 129%;
@@ -633,18 +636,25 @@ img {
 
 .btn-container {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   right: 24px;
   bottom: 12px;
-  /* border: 1px solid gray; */
+  border: 1px solid gray;
+  width: 64px;
+  height: 32px;
+  cursor: pointer;
 }
 
-.btn-show-more:hover,
+.catalog-picture:hover > .catalog-overlay {
+  transform: translateY(0);
+}
+
+/* .btn-show-more:hover,
 .btn-show-more:focus {
   background-color: #1f3cd4;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .hide-on-mobile {
@@ -1339,7 +1349,7 @@ img {
     height: 90px;
     font-size: 16px;
     line-height: 125%;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 
   .modal-input {
