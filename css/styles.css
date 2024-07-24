@@ -85,7 +85,7 @@ img {
   .title {
     font-size: 36px;
     line-height: 0.92;
-    color: rgba(12, 12, 12, 0.5);
+    color: rgb(12, 12, 12);
     background-color: #f3f3f3;
     border: none;
   }
