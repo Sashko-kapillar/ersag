@@ -613,6 +613,7 @@ img {
   margin-left: auto;
   margin-top: 8px;
   cursor: pointer;
+  user-select: none;
 }
 
 /* .catalog-picture:hover .catalog-overlay,
