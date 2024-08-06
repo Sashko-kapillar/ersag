@@ -769,7 +769,8 @@ img {
 
 .advertis-container {
   position: relative;
-  background-color: #0c0c0c;
+  background-color: rgba(26, 41, 2, 0.7);
+  /* background-color: #1a2902; */
   padding: 60px 28px;
   border-radius: 30px;
   overflow: hidden;
@@ -835,7 +836,7 @@ img {
 
 .advertis-anchor:hover {
   background: #fbfbfb;
-  color: #0c0c0c;
+  color: #1a2902;
 }
 
 .advertis-anchor:focus {
@@ -865,8 +866,7 @@ img {
   }
 
   .advertis-text {
-    font-size: 48px;
-    line-height: 0.92;
+    font-size: 3rem;
   }
 }
 
@@ -1648,7 +1648,7 @@ img {
   padding: 40px 28px 28px;
   margin: 0 auto;
   border-radius: 30px;
-  background-color: #0c0c0c;
+  background-color: rgba(26, 41, 2, 0.7);
 }
 
 .footer-logo-social {
