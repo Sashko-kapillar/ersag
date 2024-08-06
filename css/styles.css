@@ -6,16 +6,22 @@
   padding: 0;
 }
 
+:root {
+  --bs-font-sans-serif: "Roboto", sans-serif;
+}
+
 html {
+  height: 200vh;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--bs-font-sans-serif);
   background-color: #fbfbfb;
+  font-size: 1rem;
   color: #0c0c0c;
-  height: 200vh;
-  scroll-behavior: smooth; /* Властивість забезпечує плавний скролл при переході до якорів. */
+  font-weight: 400;
+  /* scroll-behavior: smooth; Властивість забезпечує плавний скролл при переході до якорів. */
 }
 
 h1,
@@ -431,12 +437,12 @@ img {
 }
 
 .about-us-text {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 300;
   line-height: 1.29;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   color: rgba(12, 12, 12, 0.7);
   margin-bottom: 20px;
+  font-size: 1.09rem;
 }
 
 .about-us-text:last-of-type {
@@ -480,11 +486,6 @@ img {
     margin-bottom: 40px;
   }
 
-  .about-us-text {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
   .about-us-text:last-of-type {
     margin-bottom: 60px;
   }
@@ -514,17 +515,16 @@ img {
 /* ========= Catalog  ========= */
 
 .catalog-subtitle {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 125%;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+  padding-bottom: 8px;
 }
 
 .catalog-text,
 .overlay-text {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 300;
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: left;
@@ -817,7 +817,7 @@ img {
   width: 160px;
   height: 48px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.29;
   text-align: center;
   color: #fbfbfb;
