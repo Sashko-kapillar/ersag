@@ -2368,6 +2368,7 @@
                 Наш представник зателефонує Вам з 9:00-10:00 або 16:00-18:00.
               </p>
               <form
+                id="tg-message"
                 class="modal-form"
                 action="mailto:kapillar@ukr.net"
                 method="post"
@@ -2416,9 +2417,7 @@
                     placeholder="Повідомлення"
                   ></textarea>
                   <div>
-                    <button type="submit" class="btn-subscribe">
-                      Надіслати
-                    </button>
+                    <button type="submit" class="btn-submit">Надіслати</button>
                   </div>
                   <p class="modal-label">
                     <span>*</span> - поля обов'язкові для заповнення
@@ -2700,7 +2699,8 @@
 
     <!-- script for btnClose -->
 
-    <script src="./js/scroll.js" type="module" crossorigin></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- <script src="https://cdn.emailjs.com/dist/email.min.js" defer type="module"
     crossorigin></script> -->
     <script src="./js/menu.js" type="module" crossorigin></script>
