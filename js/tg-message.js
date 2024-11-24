@@ -1,5 +1,5 @@
-const TOKEN = "7387360375:AAHk8V7iqtSG7ZQrFcR3KquXvmB5xUcGNAw";
-const CHAT_ID = "-1002343393160";
+const TOKEN = "7487071292:AAFq2ZIWows1V6JW7jWbYtQyEMEtVWJGW_k";
+const CHAT_ID = "-1002428568696";
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 document.getElementById("tg-message").addEventListener("submit", function (e) {
@@ -18,16 +18,25 @@ document.getElementById("tg-message").addEventListener("submit", function (e) {
       text: message,
     })
     .then((res) => {
-      this.name.value = "";
-      this.phone.value = "";
-      this.comment.value = "";
-      iziToast.info({
-        message: "Повідомлення успішно відправилося...",
+      iziToast.success({
+        title: "Успішно",
+        message: "Ваше повідомлення відправлено!",
         position: "topCenter",
         color: "green",
       });
+      console.log("enjoy");
+
+      this.name.value = "";
+      this.phone.value = "";
+      this.comment.value = "";
     })
     .catch((err) => {
+      iziToast.error({
+        title: "Помилка",
+        message: "Не вдалося відправити повідомлення!",
+        position: "topCenter",
+        color: "red",
+      });
       console.warn(err);
     })
     .finally(() => {
