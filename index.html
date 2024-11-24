@@ -2367,21 +2367,14 @@
                 <!-- <p class="modal-text"> -->
                 Наш представник зателефонує Вам з 9:00-10:00 або 16:00-18:00.
               </p>
-              <form
-                id="tg-message"
-                class="modal-form"
-                action="mailto:kapillar@ukr.net"
-                method="post"
-              >
+              <form id="tg-message" class="modal-form" method="post">
                 <div class="modal-field-wrap">
-                  <label for="user-name" class="modal-label"
-                    >Ім'я <span>*</span></label
-                  >
+                  <label class="modal-label">Ім'я <span>*</span></label>
                   <div class="container-input">
                     <input
                       type="text"
                       class="modal-input"
-                      name="user-name"
+                      name="name"
                       id="user-name"
                       placeholder="Ім'я"
                       pattern="[А-ЩІЇЄҐа-щіїєґ]{4,}"
@@ -2391,14 +2384,14 @@
                   </div>
                 </div>
                 <div class="modal-field-wrap">
-                  <label for="user-phone" class="modal-label"
+                  <label class="modal-label"
                     >Номер телефону <span>*</span></label
                   >
                   <div class="container-input">
                     <input
                       type="tel"
                       class="modal-input"
-                      name="user-phone"
+                      name="phone"
                       id="user-phone"
                       placeholder="+380"
                       pattern="^\+\d{3}\d{2}\d{3}\d{2}\d{2}$"
@@ -2704,5 +2697,6 @@
     <!-- <script src="https://cdn.emailjs.com/dist/email.min.js" defer type="module"
     crossorigin></script> -->
     <script src="./js/menu.js" type="module" crossorigin></script>
+    <script src="./js/tg-message.js" type="module" crossorigin></script>
   </body>
 </html>
